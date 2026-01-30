@@ -66,13 +66,6 @@ Two supervised classifiers are evaluated:
 
 </div>
 
-## Results Summary
-
-* Shape-only features provide **moderate classification accuracy**
-* Adding **global and local shape descriptors** significantly improves performance
-* **Best accuracy is achieved when colour (LAB) features are combined with shape features**
-* PCA visualization shows improved class separability with richer feature sets
-
 ## Limitations
 
 * Designed for **one object per image**
@@ -80,22 +73,3 @@ Two supervised classifiers are evaluated:
 * Operates only on **colour images**
 * Performance depends on dataset diversity
 * PCA space changes with training data distribution
-
-## Conclusion
-
-This work presents a **robust and interpretable object characterization pipeline** using:
-
-* PCA-based geometric descriptors
-* Fourier boundary analysis
-* Global and local shape modeling
-* LAB colour statistics
-
-The fusion of **geometry and colour features** significantly improves classification accuracy while maintaining invariance to scale, rotation, and position.
-
-## Future Scope
-
-* Improve handling of concave and complex shapes
-* Extend to real-time webcam-based classification
-* Reduce dependence on colour features
-* Generalize to unseen object categories
-* Explore hybrid deep-learning + handcrafted features
